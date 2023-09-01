@@ -6,3 +6,37 @@ print("Addition ::", num1 + num2 )
 print("Subtraction ::", num1 - num2)
 print("Multiplication ::", num1*num2)
 print("Division ::",num1/num2)
+print("Remainder ::", num1 % num2)
+
+# Logic Operation
+
+if(num1 > num2):
+    print("Fisrt number is greater than second number")
+if(num2> num1):
+    print("Second number is greater than First number")
+if(num1 == num2 ):
+    print("Both are Equal number")
+else:
+    print("Both are not Equal")
+print("Logical OR ::",num1 | num2)
+print("Logical AND ::",num1 & num2)
+print("Logical XOR ::",num1 ^ num2)
+print("Logical NOR ::",~num1)
+print("Logical NOR ::",~num2)
+
+#Fobbinache Series
+def fibo(n):
+    a=0
+    b=1
+    if(n==0):
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2, n):
+            c=a+b
+            a=b
+            b=c
+            print(c)
+n=int(input("Please enter the number::"))
+fibo(n)
